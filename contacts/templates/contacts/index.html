@@ -1,0 +1,6 @@
+<ol>
+    {% for contact in contacts %}
+        <li><a href="/contacts/{{ contact.id }}/">{{ contact.name}}</a>: {{ contact.full_address }}</li>
+    {% endfor %}
+
+</ol>
